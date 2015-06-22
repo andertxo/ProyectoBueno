@@ -58,6 +58,10 @@
 			<li><a href="https://librosweb.es/libro/css_avanzado" target="_blank">CSS Avanzado</a></li>
 			<li><a href="http://apps.pixlr.com/editor/" target="_blank">Photoshop Online</a></li>
 			<li><a href="http://es.lipsum.com" target="_blank">lorem ipsum</a></li>
+			<li><a href="pdf/css3-cheatsheet-emezeta.pdf" target="_blank">css3</a></li>
+			<li><a href="pdf/html5-cheatsheet-emezeta.pdf" target="_blank">html5</a></li>
+			<li><a href="pdf/ObjetosJavaScript.pdf" target="_blank">javascript</a></li>
+			
 		</ul>
 	</aside>
 

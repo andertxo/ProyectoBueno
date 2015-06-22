@@ -1,6 +1,6 @@
 /*  
 	version:	1.0
-	author:		Ieltxu Orue IbaÃ±ez  
+	author:		ANDER
 	date:		20150518
 	
 */
@@ -9,7 +9,20 @@
 	RESET
 	Resetear todos los estilos para cualquier navegador.
 ******************/
-/*@import url("reset.css");
+@import url("reset.css");
+@import url("media.css");
+
+
+
+/******************
+FONTS
+**********************/
+
+@font-face {
+	font-family: kikelet;
+	src: url("../fonts/kikelet/Kikelet.ttf") format('truetype');
+}
+
 
 /******************
 		CLEARFIX
@@ -21,26 +34,28 @@
 /*	
 	ETIQUETAS 
 	Dar un estilo general o base a toda la web.
+	
 */
+#container{
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 20px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	font-family: arial;
+	background-color: white;
+}
 h1 {
   color: red;
   margin-bottom: 30px;
   font-family: arial;
   font-size: 70px;
   text-align: center;
-  font-family: 'Lobster', cursive;
   font-weight: 50px;
-  text-shadow: 0 0 4px #241318, 0 -5px 4px #E39A4B, 2px -10px 6px #EB421E, -2px -15px 11px #f80, 2px -18px 18px #EAF2F3;
-  -webkit-text-fill-color: blue;
-  -webkit-text-stroke-color: inherit;
-  -webkit-text-stroke-width: 2px;
-  -webkit-box-reflect: below 10px;
-  -webkit-animation-name: Ejemplos HTML5, CSS3 y JavaScript;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-direction: alternate;
+  
+ 
 }
+
 
 
 h2{
@@ -132,10 +147,10 @@ article h2{
 	padding: 5px 0;
 }
 
-/*
+/*******************************************************
 	ESTILOS REUTILIZABLES
 	Regla con selector por CLASS para usar en todas las paginas.
-*/
+***************************************************/
 
 
 .btn_volver{
@@ -215,10 +230,10 @@ article h2{
 }
 
 
-/*
+/**************************************************************
 	PAGINAS
 	Una sección por cada pagina de nuestra web.
-*/
+**************************************************************/
 
 
 /*****************
@@ -234,18 +249,47 @@ article h2{
 	width: 920px;
 	top: 0px;
 }
+#head h1{
+	 text-shadow: 0 0 4px #241318, 0 -5px 4px #E39A4B, 2px -10px 6px #EB421E, -2px -15px 11px #f80, 2px -18px 18px #EAF2F3;
+  
+  -webkit-text-fill-color: blue;
+  -webkit-text-stroke-color: inherit;
+  -webkit-text-stroke-width: 2px;
+  -webkit-box-reflect: below 10px;
+  
+  -webkit-animation-name: Ejemplos HTML5, CSS3 y JavaScript;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+  
+  	font-family: kikelet;
+	
+	
+}
+
+
+
 nav{
 	top: 180px;
 	border-radius:20px;
 }
+
 #content {
 	padding-top: 215px;
 	padding-bottom: 1px;
 }
 
+#logo img{
+	width: 50px;
+  height: 50px;
+  float: left;
+}
+
+
 
 /*********************
-	MENU PRINCIPAL
+	MENU PRINCIPAL/NAVEGACION
 **********************/
 nav * {
 	padding: 0px;
@@ -305,14 +349,6 @@ nav h2, nav h3 {
 .menu li ul li ul{
 	right: -175px;
 	top: 0px;
-}
-
-/* NAV */
-
-#logo img{
-	width: 50px;
-  height: 50px;
-  float: left;
 }
 
 
@@ -540,13 +576,17 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 
 
 
-/* CARTELERA DETALLE */
+/***********************
+ CARTELERA DETALLE 
+ **********************/
 #cartelera_detalle  h1{
 	color: blue;
 	text-align: left;
 }
 
-/* TABLA_AVANZADA */
+/***********************
+ TABLA_AVANZADA 
+**********************************/
 #tabla_avanzada h1{
 	font-style: italic;
 	color: blue;
@@ -572,7 +612,9 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	text-align: left;	
 }
 
-/* FOMULARIO */
+/**************
+ FOMULARIO 
+ *******************/
 
 #formulario {
 	border: 3px solid #80ab54;
@@ -611,24 +653,30 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 
 
 
-/* Reglas con selectores por ID */
+/******************** Reglas con selectores por ID */
 
 #dado{
 	width: 100px;
 	height: 100px;
 }
 
-#container{
-	width: 900px;
-	margin: 0 auto;
-	padding: 0 20px;
-	border-right: 1px solid grey;
-	border-left: 1px solid grey;
-	font-family: arial;
-	background-color: white;
-}
+
 
 #traductor{
 	float:left;
+	
+}
+
+/*********************
+CALCULADORA
+**********************/
+imagenbotom{
+	  background-image: url(back.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+  font-family: arial;
+  width: 40px;
+  height: 40px;
 	
 }
